@@ -23,7 +23,14 @@ input.addEventListener("change", (e)=> {
                 else{
                     console.log(row.at(1));
                     const li = document.createElement("li");
-                    li.textContent = row.at(1);
+                    const img = document.createElement("img");
+                    const span = document.createElement("span");
+                    li.style.display = "flex";
+                    img.src ="images/rupee.svg";
+                    img.style.width = "10px";
+                    span.textContent = row.at(1);
+                    li.appendChild(img)
+                    li.appendChild(span)
                     ulone.appendChild(li);
                 }
                 if(row.at(2) == null){
@@ -37,8 +44,15 @@ input.addEventListener("change", (e)=> {
                 else{
                     console.log(row.at(2));
                     const li = document.createElement("li");
-                    li.textContent = row.at(2);
-                    ultwo.appendChild(li);                    
+                    const img = document.createElement("img");
+                    const span = document.createElement("span");
+                    li.style.display = "flex";
+                    img.src ="images/rupee.svg";
+                    img.style.width = "10px";
+                    span.textContent = row.at(2);
+                    li.appendChild(img)
+                    li.appendChild(span)
+                    ultwo.appendChild(li);                   
                 }
             }
         })
